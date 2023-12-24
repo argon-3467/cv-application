@@ -1,0 +1,73 @@
+/* Basic CSS Reset */
+
+/* Box-sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+figure,
+blockquote,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles (bullet points and numbers) */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default styles for anchor links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Remove default styles for buttons */
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+/* Ensure images are responsive and do not overflow their containers */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove default border-radius */
+button,
+input,
+select,
+textarea {
+  border-radius: 0;
+}
+
+/* Standardize font family to ensure consistent rendering */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Additional styles can be added based on specific project requirements */

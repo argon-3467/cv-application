@@ -1,0 +1,30 @@
+/* To support styles in pdf generation some styles are mentioned in the Preview Componenet itself */
+.preview {
+  padding: 10px;
+  border: 2px solid black;
+  overflow: auto;
+  background-color: #f0f0f0;
+}
+.preview div.cv {
+  padding: 5mm;
+  width: 210mm;
+  height: 297mm;
+  background-color: white;
+}
+
+.preview button {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+}
+
+select#fontSelector {
+  border-radius: 4px;
+  padding: 6px;
+}
