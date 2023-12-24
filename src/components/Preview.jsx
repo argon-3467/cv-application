@@ -1,6 +1,6 @@
 import html2pdf from 'html2pdf.js';
 import { useState } from 'react';
-import GoogleFontLoader from 'react-google-font-loader';
+import WebFont from 'webfontloader';
 import '/src/styles/Preview.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -23,7 +23,11 @@ export default function Preview({ person }) {
   }
 
   const [selectedFont, setSelectedFont] = useState('Open Sans');
-
+  WebFont.load({
+    google: {
+      families: [selectedFont],
+    },
+  });
   let filteredSchools = person.education.schools.filter(
     (school) => school.addToPreview
   );
@@ -49,8 +53,6 @@ export default function Preview({ person }) {
 
   return (
     <>
-      <GoogleFontLoader fonts={[{ font: selectedFont, weights: [400, 700] }]} />
-
       <div className="preview">
         <div
           id="cv-print"
